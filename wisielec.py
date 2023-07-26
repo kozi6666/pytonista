@@ -1,7 +1,7 @@
 import random
 
 
-lista_slow = ["kochamdominikeczube"]
+lista_slow = ["kocham dominike czube"]
 
 
 def wylosuj_slowo():
@@ -18,6 +18,8 @@ def gra():
         for litera in slowo:
             if litera in zgadniete_litery:
                 pokaz += litera
+            elif litera == " ":
+                pokaz += " "
             else:
                 pokaz += "_"
 
