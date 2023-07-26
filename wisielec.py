@@ -1,6 +1,5 @@
 import random
 
-
 lista_slow = ["kocham dominike czube"]
 
 
@@ -24,31 +23,34 @@ def gra():
                 pokaz += "_"
 
         if pokaz == slowo:
-            print("gratulacje! odgadles: ", slowo)
+            print("\nGRATULACJE! ZGADŁEŚ!: ", slowo)
             break
 
-        print("slowo: ", pokaz)
+        print("\nSłowo lub zdanie: ", pokaz)
 
-        zgadniecie = input("zgadnij litere lub całość: ").lower()
+        zgadniecie = input("Zgadnij literę lub zdanie: ").lower()
 
         if zgadniecie == slowo:
-            print("gratulacje! odgadles: ", slowo)
+            print("\nGRATULACJE! ZGADŁEŚ!: ", slowo)
             break
 
         if zgadniecie in zgadniete_litery:
-            print("ta litera zostala juz odgadnieta")
+            print("\nTa litera została juz wpisana")
             continue
 
         zgadniete_litery.append(zgadniecie)
 
         if zgadniecie not in slowo:
             proba += 1
-            print("nie ma takiej litery")
+
+            print("\nNie ma tu takiej litery")
             if proba == 6:
-                print("przegrales! to: ", slowo)
+                print("\nPRZEGRAŁEŚ! Słowo lub zdanie to: ", slowo)
                 break
 
 
 if __name__ == "__main__":
-    print("Witaj w grze 'Wisielec' ! ")
+    print("\nWITAJ W GRZE 'WISIELEC' ! ")
+    print("Życzę powodzenia!")
+
     gra()
