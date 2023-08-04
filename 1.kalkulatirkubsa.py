@@ -14,6 +14,7 @@ while True:
     print("Dostepne operacje: ")
     print("1. Wyrażenie")
     print("0. Wyjście")
+    print("hehe")
     wybor = input("WYBIERZ NUMER OPERACJI: ")
 
     if wybor not in ("1", "0"):
