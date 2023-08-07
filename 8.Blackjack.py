@@ -16,7 +16,7 @@ while suming <= 21:
         print(f"{x}"" Rzut kostką")
         print("")
         num = (random.choice(list))
-        print(num)
+        print("Wyrzuciłeś:",num)
         nums.append(num)
         x += 1
         suming = sum(nums)
