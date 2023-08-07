@@ -9,6 +9,7 @@ print("")
 print("Witaj w grze BLACKJACK")
 print("")
 print("Wciśnij <enter> aby zacząć gre")
+print("Jeżeli chcesz zatrzymać wybierz <q>")
 
 while suming <= 21:
     req = input("...")
@@ -16,7 +17,7 @@ while suming <= 21:
         print(f"{x}"" Rzut kostką")
         print("")
         num = (random.choice(list))
-        print("Wyrzuciłeś:",num)
+        print("Wyrzuciłeś:", num)
         nums.append(num)
         x += 1
         suming = sum(nums)
